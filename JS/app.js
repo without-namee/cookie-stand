@@ -25,19 +25,21 @@ var dStore1 = {
   location : 'Seatlle',
   minCustomers : 23,
   maxCustomers : 65,
-  custArray: [],
+   avgCookie : 6.3,
+  cookiezArray: [],
   totalCookie: 0,
-  avgCookie : 6.3,
+ 
 
 
 
   randomCustm : function(){
     for( var i=0; i < hours.length; i++){
 
-      
-      this.custArray.push( getRandomInt(this.minCustomers, this.maxCustomers));
+      this.cookiezArray.push (Math.floor( getRandomInt(this.minCustomers, this.maxCustomers)*this.avgCookie));
     }
   },
+
+ 
   rendre:function(){
     var divx = document.getElementById('divDoc');
 
@@ -45,14 +47,15 @@ var dStore1 = {
     seatlleH2.textContent=this.location;
     divx.appendChild(seatlleH2);
 
+
     var ul1 = document.createElement('ul');
     divx.appendChild(ul1);
 
 
     for (var x = 0; x < hours.length; x++){
-      this.totalCookie = this.totalCookie + this.custArray[x];
+      this.totalCookie+=this.cookiezArray[x];
       var lix = document.createElement('li');
-      lix.textContent = hours[x] + ' ' + this.custArray[x] +' cookies';
+      lix.textContent = hours[x] + ' ' + this.cookiezArray[x]+' cookies';
       ul1.appendChild(lix);
 
     }
@@ -221,7 +224,7 @@ var dStore5 = {
       this.custArray.push( getRandomInt(this.minCustomers, this.maxCustomers));
     }
   },
-  render5:function(){
+  rendre:function(){
     var divx = document.getElementById('divDoc');
 
     var seatlleH2 = document.createElement('h2');
@@ -247,4 +250,4 @@ var dStore5 = {
   }
 };
 dStore5.randomCustm();
-dStore5.render();
+dStore5.rendre();
