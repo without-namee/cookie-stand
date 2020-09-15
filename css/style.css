@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
+
+body{
+    background-color: rgb(177, 212, 198);
+}
+
+table{
+    border: solid 4px rgb(8, 7, 2) ;
+    background-color: rgb(235, 67, 95);
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 5px;
+
+}
+
+
+td{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid 2px rgb(13, 195, 228) ;
+    background-color: rgb(96, 77, 204);
+    padding: 3px;
+    border-radius: 9px;
+
+    
+}
+
+#divTable{
+
+
+    text-align: center;
+  
+}
+
+h1{
+    text-align: center;
+    color: rgb(128, 0, 0);
+    font-family: 'Raleway', sans-serif;
+    
+}
