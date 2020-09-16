@@ -21,20 +21,86 @@ td{
     background-color: rgb(96, 77, 204);
     padding: 3px;
     border-radius: 9px;
-
-    
 }
 
 #divTable{
-
-
     text-align: center;
-  
 }
 
 h1{
     text-align: center;
-    color: rgb(128, 0, 0);
-    font-family: 'Raleway', sans-serif;
+    color: blanchedalmond;
+    font-family: auto;
+    font-size: xxx-large;
+    cursor: copy;
     
+}
+
+.one{
+    height: 17cm;
+    position: relative;
+    left: 13%;
+}
+
+
+
+.two{
+    margin-bottom: 40px;
+    margin-top: 58px;
+    position: relative;
+    left: 22%;
+}
+.three{
+    position: relative;
+    top: 282px;
+    left: 20%;
+    border-radius: 292%;
+}
+
+.four{
+    border: double;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: pink;
+    position: relative;
+    left: 11%;
+}
+
+.five{
+    position: relative;
+    left: -47%;
+}
+
+.seven{
+    position: relative;
+    left: 56%;
+    top: 79px;
+    border-radius: 300%;
+}
+.Location{
+    line-height: 1.6;
+    color: deeppink;
+    font-family: cursive;
+    padding: 10px;
+    width: 317px;
+    position: relative;
+    top: 106px;
+    left: 37%;
+
+}
+
+.sa3at{
+    position: relative;
+    left: 18%;
+}
+
+#days{
+    margin-left: 37%;
+    margin-top: 2%;
+
+}
+#days1{
+    height: 49px;
+    width: 93px;
+    color: grey;
 }
