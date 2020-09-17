@@ -1,5 +1,8 @@
 'use strict';
 
+
+//-----------------------------------------
+
 var hours = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm'];
 
 
@@ -9,40 +12,23 @@ var hoursTotal = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 var divTable = document.getElementById('divTable');
 
-var table = document.createElement('table');
-
-divTable.appendChild(table);
-//-----------------------------------------
-
-function SalmonStore(location , minCustomersPerHour , maxCustomersPerHour, avgCookies ){
-
-  this.location = location;
-  this.minCustomersPerHour = minCustomersPerHour;
-  this.maxCustomersPerHour = maxCustomersPerHour;
-  this.avgCookies = avgCookies;
-  this.customersPerHour = [];
-  this.cookiesPerHour = [],
-  this.dailyTotal = 0;
-  allLocations.push(this);
-  console.log(this.customersPerHour);
-  this.randomNumber();
-
-}
 
 //----------------------------------------
 function addHeader() {
   var headerRow = document.createElement('tr');
   var th = document.createElement('th');
-
+  
   th.textContent = 'Table' ;
   headerRow.appendChild(th);
 
   for (var x = 0; x < hours.length; x++){
     th = document.createElement('th');
+    
     th.textContent = hours[x] ;
     headerRow.appendChild(th);
   }
   th = document.createElement('th');
+
   th.textContent = 'Daily Total' ;
   headerRow.appendChild(th);
   table.appendChild(headerRow);
@@ -77,9 +63,6 @@ function addFooter() {
   tr.appendChild(td);
 }
 
-
-
-
 //-------------------------------------------
 
 
@@ -101,7 +84,6 @@ SalmonStore.prototype.calcNumberOfCookiesPerHour = function(){
   }
   hoursTotal[hoursTotal.length-1]+= this.dailyTotal;
 };
-
 
 
 //--------------------------------------------
@@ -126,7 +108,8 @@ SalmonStore.prototype.render = function(){
 };
 
 //-------------------------------------------
-
+var table = document.createElement('table');
+divTable.appendChild(table);
 
 new SalmonStore('Seatlle', 23, 65, 6.3);
 
@@ -147,6 +130,8 @@ for (var i = 0; i < allLocations.length; i++) {
 addFooter();
 //----------------------------------------------
 
+
+
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -154,3 +139,37 @@ function getRandomInt(min, max) {
 }
 
 //--------------------------------------------------
+
+
+var danaForm = document.getElementById('OrderX');
+
+danaForm.addEventListener('submit',function (event){
+  event.preventDefault();
+  var eventName = event.target.Name.value;
+  var eventMin = event.target.MinC.value;
+  var eventMax = event.target.MaxC.value;
+  var eventAvg = event.target.Avg.value;
+
+  var newStore = new SalmonStore(eventName, eventMin, eventMax, eventAvg);
+
+  newStore.render();
+  addFooter();
+
+});
+
+//--------------------------------------------------
+
+function SalmonStore(location , minCustomersPerHour , maxCustomersPerHour, avgCookies ){
+
+  this.location = location;
+  this.minCustomersPerHour = minCustomersPerHour;
+  this.maxCustomersPerHour = maxCustomersPerHour;
+  this.avgCookies = avgCookies;
+  this.customersPerHour = [];
+  this.cookiesPerHour = [],
+  this.dailyTotal = 0;
+  allLocations.push(this);
+  console.log(this.customersPerHour);
+  this.randomNumber();
+
+}
