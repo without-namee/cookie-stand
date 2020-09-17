@@ -3,6 +3,7 @@
 
 body{
     background-color: rgb(177, 212, 198);
+    
 }
 
 table{
@@ -14,7 +15,9 @@ table{
 
 }
 
-
+#divone{
+    margin-right: 20%;
+}
 td{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: solid 2px rgb(13, 195, 228) ;
@@ -37,18 +40,18 @@ h1{
 }
 
 .one{
-    height: 17cm;
+    height: 10cm;
     position: relative;
-    left: 13%;
+    left: 61%;
+    top: -223px;
 }
 
 
 
 .two{
-    margin-bottom: 40px;
-    margin-top: 58px;
     position: relative;
-    left: 22%;
+    left: 28%;
+    top: -5cm;
 }
 .three{
     position: relative;
@@ -63,44 +66,102 @@ h1{
     border-style: solid;
     border-color: pink;
     position: relative;
-    left: 11%;
+    left: 20%;
 }
 
 .five{
     position: relative;
-    left: -47%;
+    left: -55%;
 }
 
 .seven{
     position: relative;
     left: 56%;
-    top: 79px;
+    top: -7cm;
     border-radius: 300%;
 }
 .Location{
     line-height: 1.6;
     color: deeppink;
     font-family: cursive;
-    padding: 10px;
     width: 317px;
     position: relative;
-    top: 106px;
+    top: -6cm;
     left: 37%;
 
 }
 
 .sa3at{
-    position: relative;
-    left: 18%;
+    position: absolute;
+    left: 14%;
 }
 
 #days{
-    margin-left: 37%;
-    margin-top: 2%;
+    position: relative;
+    top: 25px;
+    left: 37%;
+
+}
+
+.ayam{
+    position: relative;
+    top: 100px;
+    left: 19%;
 
 }
 #days1{
     height: 49px;
     width: 93px;
     color: grey;
+}
+
+.Order{
+    
+        /* border: double; */
+        background-color: azure;
+        height: 242px;
+        width: 23%;
+        /* border-radius: 134px; */
+        text-align: -webkit-center;
+        font-size: 117%;
+        font-family: monospace;
+        position: relative;
+        left: 32%;
+        top: -15px;
+        border-radius: 60%;
+}
+
+.Order1{
+    
+    /* border: double; */
+    background-color: azure;
+    height: 242px;
+    width: 23%;
+    /* border-radius: 134px; */
+    text-align: -webkit-center;
+    font-size: 117%;
+    font-family: monospace;
+    position: relative;
+    left: 32%;
+    top: -15px;
+    border-radius: 60%;
+    visibility: hidden;
+}
+
+.kabseh{
+    border-radius: 10px;
+    background-color: dimgray;
+    color: floralwhite;
+}
+.lal{
+    inline-size: auto;
+    position: relative;
+    left: 18%;
+    top: -10cm;
+}
+label{
+    cursor: pointer;
+}
+fieldset{
+    border-radius: inherit;
 }
