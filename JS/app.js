@@ -65,9 +65,6 @@ new Shop('Paris', 20, 38, 2.3);
 new Shop('Lima', 2, 16, 4.6);
 // -----------------------------------------------
 
-
-
-
 function footer() {
   var trX = document.createElement('tr');
   tableEle.appendChild(trX);
