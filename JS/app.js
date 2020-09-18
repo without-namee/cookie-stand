@@ -6,6 +6,7 @@ var container = document.getElementById('divTable');
 var tableEle = document.createElement('table');
 container.appendChild(tableEle);
 var dStore = [];
+
 // -----------------------------------------------
 function Shop(name, minCust, maxCust, avgCoookies) {
   this.name = name;
