@@ -36,6 +36,7 @@ h1{
     font-family: auto;
     font-size: xxx-large;
     cursor: copy;
+    margin-left: 26%;
     
 }
 
@@ -133,25 +134,22 @@ h1{
 
 .Order1{
     
-    /* border: double; */
-    background-color: azure;
-    height: 242px;
-    width: 23%;
-    /* border-radius: 134px; */
-    text-align: -webkit-center;
-    font-size: 117%;
-    font-family: monospace;
-    position: relative;
-    left: 32%;
-    top: -15px;
-    border-radius: 60%;
-    visibility: hidden;
+        background-color: azure;
+        width: 23%;
+        text-align: -webkit-center;
+        font-family: monospace;
+        position: relative;
+        left: 26%;
+        top: 122px;
+        border-radius: 60%;
 }
 
 .kabseh{
     border-radius: 10px;
     background-color: dimgray;
     color: floralwhite;
+    box-shadow: 0 0 5px 1px red;
+
 }
 .lal{
     inline-size: auto;
@@ -165,3 +163,10 @@ label{
 fieldset{
     border-radius: inherit;
 }
+
+input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+    box-shadow: 0 0 5px 1px red;
+
+  }
+  
