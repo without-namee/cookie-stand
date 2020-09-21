@@ -1,34 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
 
+/* --------------------------------------------------------------- */
 
 body{
     background-color: rgb(177, 212, 198);
     
 }
-
+/* --------------------------------------------------------------- */
 table{
-    border: solid 4px rgb(8, 7, 2) ;
-    background-color: rgb(235, 67, 95);
+    border: solid 4px rgb(8, 7, 2);
+    background-color: rgb(177, 212, 198);
     padding: 5px;
     margin: 0 auto;
     border-radius: 5px;
 
 }
+/* --------------------------------------------------------------- */
 
 #divone{
     margin-right: 20%;
 }
+/* --------------------------------------------------------------- */
+
 td{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: solid 2px rgb(13, 195, 228) ;
-    background-color: rgb(96, 77, 204);
+    border: solid 2px rgb(0 0 0);
+    background-color: rgb(136 124 205);
     padding: 3px;
     border-radius: 9px;
 }
+/* --------------------------------------------------------------- */
 
 #divTable{
     text-align: center;
 }
+/* --------------------------------------------------------------- */
 
 h1{
     text-align: center;
@@ -39,6 +45,7 @@ h1{
     margin-left: 26%;
     
 }
+/* --------------------------------------------------------------- */
 
 .one{
     height: 10cm;
@@ -47,6 +54,7 @@ h1{
     top: -223px;
 }
 
+/* --------------------------------------------------------------- */
 
 
 .two{
@@ -54,12 +62,15 @@ h1{
     left: 28%;
     top: -5cm;
 }
+/* --------------------------------------------------------------- */
+
 .three{
     position: relative;
     top: 282px;
     left: 20%;
     border-radius: 292%;
 }
+/* --------------------------------------------------------------- */
 
 .four{
     border: double;
@@ -69,18 +80,23 @@ h1{
     position: relative;
     left: 20%;
 }
+/* --------------------------------------------------------------- */
 
 .five{
     position: relative;
     left: -55%;
 }
+/* --------------------------------------------------------------- */
 
 .seven{
     position: relative;
     left: 56%;
     top: -7cm;
     border-radius: 300%;
+
 }
+/* --------------------------------------------------------------- */
+
 .Location{
     line-height: 1.6;
     color: deeppink;
@@ -91,11 +107,13 @@ h1{
     left: 37%;
 
 }
+/* --------------------------------------------------------------- */
 
 .sa3at{
     position: absolute;
     left: 14%;
 }
+/* --------------------------------------------------------------- */
 
 #days{
     position: relative;
@@ -103,6 +121,7 @@ h1{
     left: 37%;
 
 }
+/* --------------------------------------------------------------- */
 
 .ayam{
     position: relative;
@@ -110,27 +129,30 @@ h1{
     left: 19%;
 
 }
+/* --------------------------------------------------------------- */
+
 #days1{
     height: 49px;
     width: 93px;
     color: grey;
 }
+/* --------------------------------------------------------------- */
 
 .Order{
     
-        /* border: double; */
-        background-color: azure;
-        height: 242px;
-        width: 23%;
-        /* border-radius: 134px; */
-        text-align: -webkit-center;
-        font-size: 117%;
-        font-family: monospace;
-        position: relative;
-        left: 32%;
-        top: -15px;
-        border-radius: 60%;
+    border: double; 
+    background-color: #95b4b4;
+    height: 236px;
+    width: 19%;
+    text-align: -webkit-center;
+    font-size: 117%;
+    font-family: monospace;
+    position: relative;
+    left: 39%;
+    top: -15px;
+    border-radius: 60%;
 }
+/* --------------------------------------------------------------- */
 
 .Order1{
     
@@ -143,6 +165,7 @@ h1{
         top: 122px;
         border-radius: 60%;
 }
+/* --------------------------------------------------------------- */
 
 .kabseh{
     border-radius: 10px;
@@ -151,18 +174,25 @@ h1{
     box-shadow: 0 0 5px 1px red;
 
 }
+/* --------------------------------------------------------------- */
+
 .lal{
     inline-size: auto;
     position: relative;
     left: 18%;
     top: -10cm;
 }
+/* --------------------------------------------------------------- */
+
 label{
     cursor: pointer;
 }
+/* --------------------------------------------------------------- */
+
 fieldset{
     border-radius: inherit;
 }
+/* --------------------------------------------------------------- */
 
 input:invalid:required {
     background-image: linear-gradient(to right, pink, lightgreen);
